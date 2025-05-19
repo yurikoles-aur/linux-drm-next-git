@@ -1,6 +1,6 @@
 pkgbase = linux-drm-next-git
 	pkgdesc = Linux kernel with bleeding-edge GPU drivers
-	pkgver = 6.14.r1335953.0ed1356af8f6
+	pkgver = 6.15.r1354200.7c1a9408ce5f
 	pkgrel = 1
 	url = https://gitlab.freedesktop.org/drm/kernel
 	arch = x86_64
@@ -13,6 +13,9 @@ pkgbase = linux-drm-next-git
 	makedepends = pahole
 	makedepends = perl
 	makedepends = python
+	makedepends = rust
+	makedepends = rust-bindgen
+	makedepends = rust-src
 	makedepends = tar
 	makedepends = xz
 	options = !debug
@@ -20,9 +23,9 @@ pkgbase = linux-drm-next-git
 	source = linux-drm-next-git::git+https://gitlab.freedesktop.org/drm/kernel.git#branch=drm-next
 	source = config
 	sha256sums = SKIP
-	sha256sums = a8c319f6f81d42d21c708fa2b4b016b0318908b63c31e21e679507f879d2606c
+	sha256sums = 878b2ee916ba6c1b3a1f1f9d9d368d9a2391bb58f71b7e52371cbb436ed2eac4
 	b2sums = SKIP
-	b2sums = 77741908fa7afe101091919c8d477f1c4c161082f115849e352a99a080fe3d599e9d8af78d8c210f81176f34a331aa639883723e230c3bf29621f0cf36fa962d
+	b2sums = 66f7f19fdbdc8d60e99ff3c9a242b61ccd697dd886a16e9fd43d7ea4b61b2afd6d4cbf7749b239b96181d8606bbd7b99b50179dc01b0cc346b7e7018e409b073
 
 pkgname = linux-drm-next-git
 	pkgdesc = The Linux kernel with bleeding-edge GPU drivers kernel and modules
@@ -33,6 +36,7 @@ pkgname = linux-drm-next-git
 	optdepends = scx-scheds: to use sched-ext schedulers
 	optdepends = wireless-regdb: to set the correct wireless channels of your country
 	provides = KSMBD-MODULE
+	provides = NTSYNC-MODULE
 	provides = VIRTUALBOX-GUEST-MODULES
 	provides = WIREGUARD-MODULE
 	replaces = virtualbox-guest-modules-arch
