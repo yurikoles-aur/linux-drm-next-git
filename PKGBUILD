@@ -6,7 +6,7 @@
 #
 
 pkgbase=linux-drm-next-git
-pkgver=6.15.r1354200.7c1a9408ce5f
+pkgver=6.16.r1368882.6ac55eab4fc4
 pkgrel=1
 pkgdesc='Linux kernel with bleeding-edge GPU drivers'
 url=https://gitlab.freedesktop.org/drm/kernel
@@ -46,9 +46,9 @@ source=(
   config  # the main kernel config file
 )
 sha256sums=('SKIP'
-            '878b2ee916ba6c1b3a1f1f9d9d368d9a2391bb58f71b7e52371cbb436ed2eac4')
+            '92005b43e54429b65a5adfa60f3ee5d164b6c88a64816cce920b7e67dc4661b6')
 b2sums=('SKIP'
-        '66f7f19fdbdc8d60e99ff3c9a242b61ccd697dd886a16e9fd43d7ea4b61b2afd6d4cbf7749b239b96181d8606bbd7b99b50179dc01b0cc346b7e7018e409b073')
+        '60161db656851b0e651e6e7ebc974cada22474bddd6b0a7ad4946bc0ecf888ca68e66f1530997aa5c7fe09645e4cfbdd16f6e32ce50678291c708c40d8a8563c')
 
 pkgver() {
   cd $_srcname
